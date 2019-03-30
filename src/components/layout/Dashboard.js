@@ -1,13 +1,18 @@
-import React, {Component} from 'react';
+import React from "react";
+import Clients from "../clients/Clients";
+import Sidebar from "../layout/Sidebar";
 
-class Dashboard extends Component {
-    render() {
-        return (
-            <div>
-                
+function Dashboard() {
+    return (
+        <div className="row">
+            <div className="col-md-10">
+                <Clients/>
             </div>
-        );
-    }
+            <div className="col-md-2">
+                <Sidebar/>
+            </div>
+        </div>
+    );
 }
 
 export default Dashboard;
