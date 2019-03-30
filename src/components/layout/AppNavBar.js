@@ -24,6 +24,11 @@ class AppNavBar extends Component {
                                     Dashboard
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="Wines" className="nav-link">
+                                    Wines
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
