@@ -40,7 +40,10 @@ class Clients extends Component {
                     {client.firstName} {client.lastName}
                   </td>
                   <td>{client.email}</td>
-                  <td>{client.balance}</td>
+                  <td>
+                    <i className="fas fa-ruble-sign" />{" "}
+                    {parseFloat(client.balance).toFixed(2)}
+                  </td>
                   <td>
                     <Link
                       to={`/client/${client.id}`}
