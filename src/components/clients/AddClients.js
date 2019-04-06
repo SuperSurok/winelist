@@ -51,9 +51,9 @@ class AddClients extends Component {
                             <div className="form-group">
                                 <label htmlFor="firstName">First Name</label>
                                 <input
+                                    name="firstName"
                                     type="text"
                                     className="form-control"
-                                    name="firstName"
                                     minLength="2"
                                     required
                                     onChange={this.onChange}
@@ -63,9 +63,9 @@ class AddClients extends Component {
                             <div className="form-group">
                                 <label htmlFor="lastName">Last Name</label>
                                 <input
+                                    name="lastName"
                                     type="text"
                                     className="form-control"
-                                    name="lastName"
                                     minLength="2"
                                     required
                                     onChange={this.onChange}
@@ -75,9 +75,9 @@ class AddClients extends Component {
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
                                 <input
+                                    name="email"
                                     type="email"
                                     className="form-control"
-                                    name="email"
                                     minLength="2"
                                     onChange={this.onChange}
                                     value={email}
@@ -86,9 +86,9 @@ class AddClients extends Component {
                             <div className="form-group">
                                 <label htmlFor="phone">Phone</label>
                                 <input
+                                    name="phone"
                                     type="tel"
                                     className="form-control"
-                                    name="phone"
                                     minLength="10"
                                     onChange={this.onChange}
                                     value={phone}
@@ -97,9 +97,9 @@ class AddClients extends Component {
                             <div className="form-group">
                                 <label htmlFor="balance">Balance</label>
                                 <input
+                                    name="balance"
                                     type="text"
                                     className="form-control"
-                                    name="balance"
                                     onChange={this.onChange}
                                     value={balance}
                                 />

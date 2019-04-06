@@ -19,9 +19,9 @@ class AddWines extends Component {
     };
 
     onChange = e => {
-        console.log('asdfasdfadf');
         this.setState({[e.target.name]: e.target.value});
     };
+
 
     onSubmit = e => {
         e.preventDefault();
@@ -45,11 +45,12 @@ class AddWines extends Component {
             vol,
             year
         } = this.state;
+
         return (
             <div>
                 <div className="row">
                     <div className="col-md-6">
-                        <Link to="Wines" className="btn btn-link">
+                        <Link to="/Wines" className="btn btn-link">
                             <i className="fas fa-arrow-circle-left"/> Back to Wines
                         </Link>
                     </div>
@@ -61,6 +62,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="producer">Producer</label>
                                 <input
+                                    name="producer"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -72,6 +74,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="country">Country</label>
                                 <input
+                                    name="country"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -83,6 +86,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="region">Region</label>
                                 <input
+                                    name="region"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -94,6 +98,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="color">Color</label>
                                 <input
+                                    name="color"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -105,6 +110,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="style">Style</label>
                                 <input
+                                    name="style"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -116,6 +122,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="year">Year</label>
                                 <input
+                                    name="year"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -127,6 +134,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="vol">Volume</label>
                                 <input
+                                    name="vol"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -138,6 +146,7 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="price">Price</label>
                                 <input
+                                    name="price"
                                     type="text"
                                     className="form-control"
                                     minLength="2"
@@ -149,9 +158,10 @@ class AddWines extends Component {
                             <div className="form-group">
                                 <label htmlFor="amount">Amount</label>
                                 <input
+                                    name="amount"
                                     type="text"
                                     className="form-control"
-                                    minLength="2"
+                                    minLength="1"
                                     required
                                     onChange={this.onChange}
                                     value={amount}
