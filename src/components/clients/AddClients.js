@@ -45,7 +45,7 @@ class AddClients extends Component {
                     </div>
                 </div>
                 <div className="card">
-                    <div className="card-header">Add Clienta</div>
+                    <div className="card-header">Add Clients</div>
                     <div className="card-body">
                         <form onSubmit={this.onSubmit}>
                             <div className="form-group">
@@ -119,6 +119,6 @@ class AddClients extends Component {
 
 AddClients.propTypes = {
     firestore: PropTypes.object.isRequired
-}
+};
 
 export default firestoreConnect()(AddClients);

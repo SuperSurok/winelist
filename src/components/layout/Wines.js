@@ -1,6 +1,6 @@
 import React from "react";
 import WineSidebar from "./WineSidebar";
-import France from "../wines/France"
+import France from "../wines/wines"
 
 function Wines() {
     return (

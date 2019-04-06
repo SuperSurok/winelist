@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import Spinner from "../layout/Spinner";
 
-class France extends Component {
+class Wines extends Component {
   state = {
     totalBottles: null
   };
@@ -91,7 +91,7 @@ class France extends Component {
   }
 }
 
-France.propTypes = {
+Wines.propTypes = {
   firestore: PropTypes.object.isRequired,
   clients: PropTypes.array
 };
@@ -101,4 +101,4 @@ export default compose(
   connect((state, props) => ({
     wines: state.firestore.ordered.wines
   }))
-)(France);
+)(Wines);
