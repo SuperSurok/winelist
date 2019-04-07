@@ -5,10 +5,12 @@ import {Provider} from "react-redux";
 import store from "./store";
 
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+
 import Dashboard from "./components/layout/Dashboard";
 import Wines from "./components/layout/Wines";
-
 import AddClients from "./components/clients/AddClients";
+import ClientDetails from "./components/clients/ClientDetails";
+
 import AddWines from "./components/wines/AddWines";
 
 import "./App.css";
