@@ -10,6 +10,7 @@ import Dashboard from "./components/layout/Dashboard";
 import Wines from "./components/layout/Wines";
 import AddClients from "./components/clients/AddClients";
 import ClientDetails from "./components/clients/ClientDetails";
+import WineDetails from "./components/wines/WineDetails";
 
 import AddWines from "./components/wines/AddWines";
 
@@ -26,8 +27,10 @@ class App extends Component {
                             <Switch>
                                 <Route exact path="/" component={Dashboard}/>
                                 <Route exact path="/client/add" component={AddClients}/>
-                                <Route exact path="/Wines" component={Wines}/>
-                                <Route exact path="/wine/add" component={AddWines}/>
+                                <Route exact path="/client/:id" component={ClientDetails}/>
+                                <Route exact path="/wines" component={Wines}/>
+                                <Route exact path="/wines/add" component={AddWines}/>
+                                <Route exact path="/wines/:id" component={WineDetails}/>
                             </Switch>
                         </div>
                     </div>
