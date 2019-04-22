@@ -10,8 +10,10 @@ import Dashboard from "./components/layout/Dashboard";
 import Wines from "./components/layout/Wines";
 import AddClients from "./components/clients/AddClients";
 import ClientDetails from "./components/clients/ClientDetails";
-import WineDetails from "./components/wines/WineDetails";
+import EditClient from "./components/clients/EditClient";
 
+
+import WineDetails from "./components/wines/WineDetails";
 import AddWines from "./components/wines/AddWines";
 
 import "./App.css";
@@ -28,6 +30,7 @@ class App extends Component {
                                 <Route exact path="/" component={Dashboard}/>
                                 <Route exact path="/client/add" component={AddClients}/>
                                 <Route exact path="/client/:id" component={ClientDetails}/>
+                                <Route exact path="/client/edit/:id" component={EditClient}/>
                                 <Route exact path="/wines" component={Wines}/>
                                 <Route exact path="/wines/add" component={AddWines}/>
                                 <Route exact path="/wines/:id" component={WineDetails}/>
